@@ -1,0 +1,39 @@
+.nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: ($gap * 0.8);
+  background-color: $color-white;
+  height: 100vh;
+  width: 70%;
+  z-index: 1;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.nav__list {
+  padding-left: 0;
+  list-style: none;
+  margin-top: ($gap * 4);
+}
+
+.nav__link {
+  display: block;
+  padding: ($gap / 2) 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+
+  &:hover,
+  &:active {
+    color: $color-primary;
+    transition: color $transition;
+  }
+
+  &:focus-visible {
+    outline: 1px dotted $color-primary;
+  }
+}
