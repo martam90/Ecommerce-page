@@ -1,19 +1,18 @@
-
 html {
-	-webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: transparent;
-	background-color: $color-white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: $color-white;
 }
 
 body {
-	font-size: $font-body-size;
-	color: $color-black;
-	font-family: $font-primary;
+  font-size: $font-body-size;
+  color: $color-black;
+  font-family: $font-primary;
 }
 
 ::selection {
-	background-color: $color-selection;
-	color: $color-selection-text;
+  background-color: $color-selection;
+  color: $color-selection-text;
 }
 
 header,
@@ -21,22 +20,23 @@ footer,
 main,
 section,
 img {
-	display: block;
+  display: block;
 }
 
 a {
-	color: $color-link;
-	cursor: pointer;
+  color: $color-link;
+  cursor: pointer;
 
-	&:hover {
-		text-decoration: none;
-	}
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 h1,
@@ -45,20 +45,21 @@ h3,
 h4,
 h5,
 h6 {
-	line-height: 1.3;
-	margin-top: $gap;
-	margin-bottom: 0;
+  line-height: 1.3;
+  margin-top: $gap;
+  margin-bottom: 0;
 }
 
 p,
 ul,
 ol,
 address {
-	margin-top: $gap;
-	margin-bottom: 0;
+  margin-top: $gap;
+  margin-bottom: 0;
 }
 
 .container {
-	max-width: 1000px;
-	margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 ($gap * 0.6);
 }

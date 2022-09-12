@@ -1,0 +1,9 @@
+.footer {
+  margin: $gap auto;
+  text-align: center;
+  font-size: ($font-body-size * 0.8);
+
+  a {
+    color: $color-primary;
+  }
+}

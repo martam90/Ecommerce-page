@@ -1,8 +1,16 @@
 .header {
   display: flex;
   align-items: center;
-  padding: ($gap * 0.8);
+  padding: ($gap / 2);
   position: relative;
+
+  @media (min-width: $bp-xs) {
+    padding: ($gap * 0.8);
+  }
+
+  @media (min-width: $bp-md) {
+    border-bottom: 1px solid $color-grayish-blue;
+  }
 }
 
 .header__btn {
@@ -11,6 +19,10 @@
   align-items: flex-start;
   z-index: 2;
   margin-right: ($gap / 3);
+
+  @media (min-width: $bp-md) {
+    display: none;
+  }
 
   span {
     margin-left: ($gap / 3);
@@ -43,9 +55,19 @@
   align-items: center;
   margin-left: auto;
   gap: ($gap / 2);
+
+  @media (min-width: $bp-md) {
+    order: 2;
+  }
 }
 
 .header__icon--avatar {
   display: block;
   width: 2rem;
+}
+
+.header__logo {
+  @media (min-width: $bp-md) {
+    margin-right: ($gap * 1.5);
+  }
 }

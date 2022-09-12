@@ -1,0 +1,41 @@
+.slide__wrap {
+  display: block;
+  height: 25rem;
+  overflow: hidden;
+
+  img {
+    flex-grow: 1;
+  }
+
+  @media (min-width: $bp-md) {
+    flex: 0 0 50%;
+  }
+}
+
+.slide--outer {
+  height: 25rem;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  height: 25rem;
+  overflow: hidden;
+
+  @media (min-width: $bp-md) {
+    border-radius: 5px;
+  }
+}
+
+// lightgallery custom styles
+
+.lg-prev.lg-icon,
+.lg-next.lg-icon {
+  background-color: $color-white;
+  border-radius: 50%;
+  color: $color-black;
+
+  &:hover:not(.disabled) {
+    color: $color-primary;
+  }
+}
